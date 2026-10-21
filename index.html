@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es"><head>
+<!DOCTYPE html><html lang="es" style="--tbh: 46px;"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Itinerario Las Vegas + Los Ángeles, 17 al 25 de noviembre de 2026: F1, shows, Disney y Universal, día por día con horarios, mapas, fotos y costos.">
@@ -75,6 +75,34 @@ html{scroll-padding-top:64px;scroll-behavior:smooth}
 #maps{display:grid;gap:12px}
 .tripbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;padding:8px max(16px,env(safe-area-inset-left,0px)) calc(8px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--paper);font-size:13px;box-shadow:0 -2px 10px rgba(0,0,0,.2)}
 .tripbar:empty{display:none}
+
+.lv-fab{position:fixed;right:16px;bottom:calc(var(--tbh,0px) + 14px);z-index:31;display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;border:0;background:var(--vegas);color:#fff;font:600 14px var(--body);box-shadow:0 4px 16px rgba(0,0,0,.25);cursor:pointer}
+.lv-fab b{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.lv-delta{position:absolute;right:8px;top:-30px;padding:3px 10px;border-radius:999px;font:600 13px var(--mono);background:var(--ink);color:var(--paper);opacity:0;transform:translateY(6px);transition:opacity .2s,transform .2s;pointer-events:none}
+.lv-delta.show{opacity:1;transform:none}
+.lv-panel{position:fixed;z-index:32;right:16px;bottom:calc(var(--tbh,0px) + 14px);width:360px;max-height:calc(100vh - var(--tbh,0px) - 90px);overflow:auto;background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.3);padding:16px 18px;display:grid;gap:12px;font-size:14px}
+.lv-panel[hidden]{display:none}
+.lv-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.lv-head b{font-family:var(--display);font-weight:400;font-size:17px}
+.lv-x{border:1px solid var(--rule);background:var(--soft);color:var(--ink);border-radius:999px;width:32px;height:32px;font-size:16px;cursor:pointer;flex:none}
+.lv-big{display:grid;gap:2px;padding:12px 14px;border-radius:12px;background:var(--soft)}
+.lv-big span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.lv-big strong{font:500 30px var(--mono);font-variant-numeric:tabular-nums;line-height:1.1}
+.lv-big small{color:var(--muted)}
+.lv-rows{display:grid;gap:4px}
+.lv-row{display:flex;justify-content:space-between;gap:10px}
+.lv-row span:last-child{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lv-row.t{border-top:1px solid var(--rule);padding-top:6px;font-weight:600}
+.lv-h{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+.lv-list{display:grid;gap:2px;margin:0;padding:0;list-style:none}
+.lv-list label{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:baseline;padding:5px 2px;border-bottom:1px dashed var(--rule);cursor:pointer}
+.lv-list input{width:17px;height:17px;margin:0;accent-color:var(--vegas);transform:translateY(3px)}
+.lv-list small{display:block;color:var(--muted);font-size:12px}
+.lv-list em{font:normal 13px var(--mono);white-space:nowrap}
+.lv-list .off{color:var(--muted)}
+.lv-note{font-size:12px;color:var(--muted)}
+@media (max-width:560px){.lv-panel{left:0;right:0;bottom:0;width:auto;max-height:82vh;border-radius:18px 18px 0 0;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}.lv-fab{right:12px}}
+@media print{.lv-fab,.lv-panel{display:none}}
 .tb-msg{flex:1 1 260px;min-width:0}
 .tb-clk{font-size:12px;opacity:.85}
 .tb-clk b{font-family:var(--mono)}
@@ -338,7 +366,7 @@ section{display:grid;gap:16px;min-width:0}
         <span>Regreso a Quito <b>mié 25 nov, 21:25</b></span>
         <span>Hora local <b>Pacífico, 3 h menos que Quito</b></span>
       </div>
-      <div class="clock" aria-live="off"><span>Ahora en Quito <b id="clk-q">17:11</b></span><span>En Las Vegas y Los Ángeles <b id="clk-pt">15:11</b></span><span>En el viaje: <b>Vegas/LA = Quito − 3 h</b> · Atlanta = Quito</span></div>
+      <div class="clock" aria-live="off"><span>Ahora en Quito <b id="clk-q">17:40</b></span><span>En Las Vegas y Los Ángeles <b id="clk-pt">15:40</b></span><span>En el viaje: <b>Vegas/LA = Quito − 3 h</b> · Atlanta = Quito</span></div>
     </div>
     <div class="ticket-stub" aria-live="polite">
       <div class="eyebrow">Falta pagar, los dos</div>
@@ -581,6 +609,9 @@ section{display:grid;gap:16px;min-width:0}
 
 </div>
 <div class="tripbar" id="tripbar" aria-live="polite"></div>
+<button class="lv-fab" id="lv-fab" type="button" aria-controls="lv-panel" aria-expanded="false" hidden=""><span>💲 Falta pagar</span><b id="lv-fab-n">$4.457</b><span class="lv-delta" id="lv-delta"></span></button>
+<aside class="lv-panel" id="lv-panel" aria-label="Presupuesto en vivo" hidden=""></aside>
+
 
 <script>
 var __IMG = {};
@@ -859,50 +890,50 @@ function U(p){ return __IMG[p] || p; }
 
   var IDEAS = [
     {g:"Comer", city:"Las Vegas", c:"--vegas", list:[
-      {id:"peppermill", pin:"i_pepper", n:"Peppermill", d:"Diner de 1972 abierto 24 h, todo neón y porciones enormes", when:"Desayuno jue 19 o vuelta de Fremont", cost:"~$25–35 c/u", tag:"e"},
-      {id:"lotus", pin:"i_lotus", n:"Lotus of Siam", d:"Tailandés, de los más premiados de Las Vegas; fuera del Strip", when:"Almuerzo jue 19", cost:"~$35–50 c/u", tag:"e"},
-      {id:"yardbird", pin:"venetian", n:"Yardbird (Venetian)", d:"Pollo frito y biscuits del sur de EE.UU.", when:"Almuerzo mié 18 en vez de tacos", cost:"~$40 c/u", tag:"e"},
-      {id:"dtf", pin:"i_aria", n:"Din Tai Fung (Aria)", d:"Dumplings xiaolongbao, al lado de Crystals", when:"Mié 18 al volver de Dream Racing", cost:"~$35–45 c/u", tag:"e"},
-      {id:"eggslut", pin:"i_cosmo", n:"Eggslut (Cosmopolitan)", d:"Sándwiches de huevo, el desayuno rápido más famoso", when:"Cualquier desayuno", cost:"~$15 c/u", tag:"e"},
-      {id:"wicked", pin:"i_cosmo", n:"Wicked Spoon (Cosmopolitan)", d:"Buffet en porciones individuales; alternativa más barata al Bacchanal", when:"Almuerzo vie 20", cost:"~$50–60 c/u", tag:"e"},
-      {id:"momofuku", pin:"i_cosmo", n:"Momofuku (Cosmopolitan)", d:"Ramen, bollos al vapor y arroz frito con kimchi", when:"Almuerzo", cost:"~$30–40 c/u", tag:"e"},
-      {id:"carbone", pin:"i_aria", n:"Carbone (Aria)", d:"Italiano de lujo, el de los rigatoni picantes. Reserva difícil", when:"Solo cambiando una noche", cost:"$$$$", tag:"e"}
+      {id:"peppermill", est:60, pin:"i_pepper", n:"Peppermill", d:"Diner de 1972 abierto 24 h, todo neón y porciones enormes", when:"Desayuno jue 19 o vuelta de Fremont", cost:"~$25–35 c/u", tag:"e"},
+      {id:"lotus", est:115, pin:"i_lotus", n:"Lotus of Siam", d:"Tailandés, de los más premiados de Las Vegas; fuera del Strip", when:"Almuerzo jue 19", cost:"~$35–50 c/u", tag:"e"},
+      {id:"yardbird", est:80, pin:"venetian", n:"Yardbird (Venetian)", d:"Pollo frito y biscuits del sur de EE.UU.", when:"Almuerzo mié 18 en vez de tacos", cost:"~$40 c/u", tag:"e"},
+      {id:"dtf", est:80, pin:"i_aria", n:"Din Tai Fung (Aria)", d:"Dumplings xiaolongbao, al lado de Crystals", when:"Mié 18 al volver de Dream Racing", cost:"~$35–45 c/u", tag:"e"},
+      {id:"eggslut", est:30, pin:"i_cosmo", n:"Eggslut (Cosmopolitan)", d:"Sándwiches de huevo, el desayuno rápido más famoso", when:"Cualquier desayuno", cost:"~$15 c/u", tag:"e"},
+      {id:"wicked", est:110, pin:"i_cosmo", n:"Wicked Spoon (Cosmopolitan)", d:"Buffet en porciones individuales; alternativa más barata al Bacchanal", when:"Almuerzo vie 20", cost:"~$50–60 c/u", tag:"e"},
+      {id:"momofuku", est:70, pin:"i_cosmo", n:"Momofuku (Cosmopolitan)", d:"Ramen, bollos al vapor y arroz frito con kimchi", when:"Almuerzo", cost:"~$30–40 c/u", tag:"e"},
+      {id:"carbone", est:300, pin:"i_aria", n:"Carbone (Aria)", d:"Italiano de lujo, el de los rigatoni picantes. Reserva difícil", when:"Solo cambiando una noche", cost:"$$$$", tag:"e"}
     ]},
     {g:"Ver y hacer", city:"Las Vegas", c:"--gold", list:[
-      {id:"eiffel", pin:"paris", n:"Mirador de la Torre Eiffel (Paris)", d:"Vista de las fuentes del Bellagio desde arriba. Abre 16:00–24:00, ~1 h", when:"Mié 18 después de \"O\" o mar 17 antes del show", cost:"$24–33 c/u", tag:"v"},
-      {id:"oz", pin:"i_oz", n:"The Wizard of Oz en la Sphere", d:"Película inmersiva en la pantalla completa de la Sphere; funciones de día", when:"Mañana jue 19 o vie 20", cost:"~$123–177 c/u", tag:"e"},
-      {id:"seven", n:"Seven Magic Mountains", d:"Torres de rocas de colores en el desierto, gratis; 30 min al sur; Uber ida y vuelta ~$60–80", when:"Mañana jue 19 o vie 20", cost:"Uber ~$70", tag:"e"},
-      {id:"mob", pin:"i_mob", n:"Mob Museum", d:"Museo de la mafia en el centro, muy bien hecho; 2 h", when:"Antes de Fremont (cierra de noche)", cost:"~$35–45 c/u", tag:"e"},
-      {id:"zip", pin:"i_zip", n:"Fly LINQ (tirolesa)", d:"Tirolesa sobre la calle peatonal del LINQ", when:"Cualquier tarde", cost:"~$45–55 c/u", tag:"e"},
-      {id:"coaster", pin:"i_nyny", n:"Montaña rusa del New York-New York", d:"Montaña rusa que pasa entre los edificios del hotel", when:"De paso por el sur del Strip", cost:"~$20 c/u", tag:"e"}
+      {id:"eiffel", est:58, pin:"paris", n:"Mirador de la Torre Eiffel (Paris)", d:"Vista de las fuentes del Bellagio desde arriba. Abre 16:00–24:00, ~1 h", when:"Mié 18 después de \"O\" o mar 17 antes del show", cost:"$24–33 c/u", tag:"v"},
+      {id:"oz", est:300, pin:"i_oz", n:"The Wizard of Oz en la Sphere", d:"Película inmersiva en la pantalla completa de la Sphere; funciones de día", when:"Mañana jue 19 o vie 20", cost:"~$123–177 c/u", tag:"e"},
+      {id:"seven", est:70, n:"Seven Magic Mountains", d:"Torres de rocas de colores en el desierto, gratis; 30 min al sur; Uber ida y vuelta ~$60–80", when:"Mañana jue 19 o vie 20", cost:"Uber ~$70", tag:"e"},
+      {id:"mob", est:120, pin:"i_mob", n:"Mob Museum", d:"Museo de la mafia en el centro, muy bien hecho; 2 h", when:"Antes de Fremont (cierra de noche)", cost:"~$35–45 c/u", tag:"e"},
+      {id:"zip", est:100, pin:"i_zip", n:"Fly LINQ (tirolesa)", d:"Tirolesa sobre la calle peatonal del LINQ", when:"Cualquier tarde", cost:"~$45–55 c/u", tag:"e"},
+      {id:"coaster", est:40, pin:"i_nyny", n:"Montaña rusa del New York-New York", d:"Montaña rusa que pasa entre los edificios del hotel", when:"De paso por el sur del Strip", cost:"~$20 c/u", tag:"e"}
     ]},
     {g:"Compras", city:"Las Vegas", c:"--sun", list:[
-      {id:"candy", pin:"candy", n:"M&M's, Coca-Cola Store y Hershey's", d:"Tiendas temáticas frente al MGM; entrada gratis. Ya está como opcional el martes", when:"Mar 17 antes del show", cost:"Gratis", tag:"v"},
-      {id:"north", pin:"north", n:"Las Vegas North Premium Outlets", d:"Outlet al aire libre: Coach, Michael Kors, Nike, Adidas, Tumi. Ya está como opcional el sábado", when:"Sáb 21 13:30–16:30", cost:"Uber ~$40 ida y vuelta", tag:"e"},
-      {id:"south", pin:"i_south", n:"Las Vegas South Premium Outlets", d:"Marcas parecidas, más techado y más descuento", when:"Alternativa al North", cost:"Uber ~$45 ida y vuelta", tag:"e"},
-      {id:"fashion", pin:"i_fashion", n:"Fashion Show Mall", d:"El shopping más grande del Strip: Nordstrom, Macy's, Zara", when:"Mié 18 tarde, junto al Venetian", cost:"A pie", tag:"e"}
+      {id:"candy", est:0, pin:"candy", n:"M&M's, Coca-Cola Store y Hershey's", d:"Tiendas temáticas frente al MGM; entrada gratis. Ya está como opcional el martes", when:"Mar 17 antes del show", cost:"Gratis", tag:"v"},
+      {id:"north", est:40, pin:"north", n:"Las Vegas North Premium Outlets", d:"Outlet al aire libre: Coach, Michael Kors, Nike, Adidas, Tumi. Ya está como opcional el sábado", when:"Sáb 21 13:30–16:30", cost:"Uber ~$40 ida y vuelta", tag:"e"},
+      {id:"south", est:45, pin:"i_south", n:"Las Vegas South Premium Outlets", d:"Marcas parecidas, más techado y más descuento", when:"Alternativa al North", cost:"Uber ~$45 ida y vuelta", tag:"e"},
+      {id:"fashion", est:0, pin:"i_fashion", n:"Fashion Show Mall", d:"El shopping más grande del Strip: Nordstrom, Macy's, Zara", when:"Mié 18 tarde, junto al Venetian", cost:"A pie", tag:"e"}
     ]},
     {g:"Comer", city:"Los Ángeles", c:"--la", list:[
-      {id:"ktown", pin:"i_ktown", n:"Asado coreano en Koreatown", d:"Parrilla en la mesa; Park's BBQ es el más conocido", when:"Solo cambiando una cena", cost:"~$45–60 c/u", tag:"e"},
-      {id:"roscoe", pin:"i_roscoe", n:"Roscoe's Chicken & Waffles", d:"Pollo frito con waffles, clásico de Hollywood", when:"Mar 24 en vez de Pink's", cost:"~$25 c/u", tag:"e"},
-      {id:"leos", pin:"i_leos", n:"Leo's Tacos (La Brea)", d:"Camión de tacos al pastor, abierto hasta tarde", when:"Mar 24 a la vuelta de Hollywood", cost:"~$10 c/u", tag:"e"},
-      {id:"grove", pin:"i_grove", n:"Original Farmers Market", d:"Mercado de 1934 con puestos de comida, junto a The Grove", when:"Mar 24 cena, en vez de Pink's", cost:"~$20–30 c/u", tag:"e"}
+      {id:"ktown", est:145, pin:"i_ktown", n:"Asado coreano en Koreatown", d:"Parrilla en la mesa; Park's BBQ es el más conocido", when:"Solo cambiando una cena", cost:"~$45–60 c/u", tag:"e"},
+      {id:"roscoe", est:50, pin:"i_roscoe", n:"Roscoe's Chicken & Waffles", d:"Pollo frito con waffles, clásico de Hollywood", when:"Mar 24 en vez de Pink's", cost:"~$25 c/u", tag:"e"},
+      {id:"leos", est:20, pin:"i_leos", n:"Leo's Tacos (La Brea)", d:"Camión de tacos al pastor, abierto hasta tarde", when:"Mar 24 a la vuelta de Hollywood", cost:"~$10 c/u", tag:"e"},
+      {id:"grove", est:50, pin:"i_grove", n:"Original Farmers Market", d:"Mercado de 1934 con puestos de comida, junto a The Grove", when:"Mar 24 cena, en vez de Pink's", cost:"~$20–30 c/u", tag:"e"}
     ]},
     {g:"Ver y hacer", city:"Los Ángeles", c:"--sun", list:[
-      {id:"venice", pin:"i_venice", n:"Venice Beach", d:"Boardwalk, Muscle Beach y skate park, a 15 min del aeropuerto", when:"Dom 22 11:00–14:00 si no les dan el cuarto", cost:"Uber ~$30 el viaje", tag:"e"},
-      {id:"smonica", pin:"santamonica", n:"Muelle de Santa Mónica", d:"Rueda frente al Pacífico y el final de la Ruta 66; se combina con Venice", when:"Dom 22 con Venice", cost:"Gratis + Uber", tag:"e"},
-      {id:"griffith", pin:"griffith", n:"Observatorio Griffith", d:"Atardecer sobre LA con el cartel de Hollywood al lado", when:"Mar 24 ~16:30 si salen temprano de Universal", cost:"Gratis + Uber ~$25", tag:"e"},
-      {id:"signview", pin:"i_sign", n:"Mirador del cartel de Hollywood (Lake Hollywood Park)", d:"La foto más cercana al cartel sin caminata larga", when:"Mar 24 con Griffith", cost:"Gratis + Uber", tag:"e"},
-      {id:"petersen", pin:"i_petersen", n:"Petersen Automotive Museum", d:"Museo de autos con Ferrari y autos de películas; ideal después de Dream Racing", when:"Solo cambiando algo", cost:"~$25 c/u", tag:"e"},
-      {id:"getty", pin:"i_getty", n:"Getty Center", d:"Museo y jardines con vista a toda la ciudad; entrada gratis", when:"Solo cambiando algo", cost:"Gratis + Uber", tag:"e"},
-      {id:"sofi", pin:"i_sofi", n:"SoFi Stadium (por fuera)", d:"Estadio del Mundial 2026, al lado del Intuit Dome", when:"Dom 22 antes del concierto", cost:"Gratis", tag:"e"}
+      {id:"venice", est:60, pin:"i_venice", n:"Venice Beach", d:"Boardwalk, Muscle Beach y skate park, a 15 min del aeropuerto", when:"Dom 22 11:00–14:00 si no les dan el cuarto", cost:"Uber ~$30 el viaje", tag:"e"},
+      {id:"smonica", est:0, pin:"santamonica", n:"Muelle de Santa Mónica", d:"Rueda frente al Pacífico y el final de la Ruta 66; se combina con Venice", when:"Dom 22 con Venice", cost:"Gratis + Uber", tag:"e"},
+      {id:"griffith", est:25, pin:"griffith", n:"Observatorio Griffith", d:"Atardecer sobre LA con el cartel de Hollywood al lado", when:"Mar 24 ~16:30 si salen temprano de Universal", cost:"Gratis + Uber ~$25", tag:"e"},
+      {id:"signview", est:25, pin:"i_sign", n:"Mirador del cartel de Hollywood (Lake Hollywood Park)", d:"La foto más cercana al cartel sin caminata larga", when:"Mar 24 con Griffith", cost:"Gratis + Uber", tag:"e"},
+      {id:"petersen", est:100, pin:"i_petersen", n:"Petersen Automotive Museum", d:"Museo de autos con Ferrari y autos de películas; ideal después de Dream Racing", when:"Solo cambiando algo", cost:"~$25 c/u", tag:"e"},
+      {id:"getty", est:50, pin:"i_getty", n:"Getty Center", d:"Museo y jardines con vista a toda la ciudad; entrada gratis", when:"Solo cambiando algo", cost:"Gratis + Uber", tag:"e"},
+      {id:"sofi", est:0, pin:"i_sofi", n:"SoFi Stadium (por fuera)", d:"Estadio del Mundial 2026, al lado del Intuit Dome", when:"Dom 22 antes del concierto", cost:"Gratis", tag:"e"}
     ]},
     {g:"Compras", city:"Los Ángeles", c:"--air", list:[
-      {id:"citadel", pin:"i_citadel", n:"Citadel Outlets", d:"Outlet grande sobre la I-5, entre el centro y Disneyland", when:"Dom 22 mañana o camino a Disney", cost:"Uber", tag:"e"},
-      {id:"delamo", pin:"i_delamo", n:"Del Amo Fashion Center", d:"De los shoppings más grandes de EE.UU., en Torrance, ~20 min del aeropuerto", when:"Dom 22 11:00–14:00 si no les dan el cuarto", cost:"Uber ~$30 el viaje", tag:"e"},
-      {id:"grove2", pin:"i_grove", n:"The Grove", d:"Shopping al aire libre con tranvía, junto al Farmers Market", when:"Mar 24 tarde", cost:"Uber", tag:"e"},
-      {id:"rodeo", pin:"i_rodeo", n:"Rodeo Drive (Beverly Hills)", d:"Calle de las marcas de lujo; para pasear y la foto", when:"Solo cambiando algo", cost:"Gratis", tag:"e"},
-      {id:"century", pin:"i_century", n:"Westfield Century City", d:"Shopping grande y moderno en el oeste de LA", when:"Solo cambiando algo", cost:"Uber", tag:"e"}
+      {id:"citadel", est:60, pin:"i_citadel", n:"Citadel Outlets", d:"Outlet grande sobre la I-5, entre el centro y Disneyland", when:"Dom 22 mañana o camino a Disney", cost:"Uber", tag:"e"},
+      {id:"delamo", est:60, pin:"i_delamo", n:"Del Amo Fashion Center", d:"De los shoppings más grandes de EE.UU., en Torrance, ~20 min del aeropuerto", when:"Dom 22 11:00–14:00 si no les dan el cuarto", cost:"Uber ~$30 el viaje", tag:"e"},
+      {id:"grove2", est:25, pin:"i_grove", n:"The Grove", d:"Shopping al aire libre con tranvía, junto al Farmers Market", when:"Mar 24 tarde", cost:"Uber", tag:"e"},
+      {id:"rodeo", est:50, pin:"i_rodeo", n:"Rodeo Drive (Beverly Hills)", d:"Calle de las marcas de lujo; para pasear y la foto", when:"Solo cambiando algo", cost:"Gratis", tag:"e"},
+      {id:"century", est:50, pin:"i_century", n:"Westfield Century City", d:"Shopping grande y moderno en el oeste de LA", when:"Solo cambiando algo", cost:"Uber", tag:"e"}
     ]}
   ];
   var ideaSel = {};
@@ -1228,7 +1259,7 @@ function U(p){ return __IMG[p] || p; }
     return '<span class="q">Quito ' + (h < 10 ? '0' : '') + h + ':' + m[2] + '</span>';
   }
   function tick(){
-    setTimeout(renderTripbar, 0);
+    setTimeout(function(){ renderTripbar(); lvTbh(); }, 0);
     try {
       var o = {hour:"2-digit", minute:"2-digit", hour12:false};
       document.getElementById("clk-q").textContent = new Date().toLocaleTimeString("es-EC", Object.assign({timeZone:"America/Guayaquil"}, o));
@@ -1300,7 +1331,67 @@ function U(p){ return __IMG[p] || p; }
     all.checked = n === OPTS.length; all.indeterminate = n > 0 && n < OPTS.length;
     document.getElementById("opt-count").textContent = "(" + n + " de " + OPTS.length + " marcados)";
   }
-  function render(){ renderTotals(); renderMaps(); renderStays(); renderMoves(); renderDays(); renderTodo(); syncAll(); }
+
+  var lvPrev = null, lvTimer = null;
+  function ideaAll(){ var out = []; IDEAS.forEach(function(g){ g.list.forEach(function(x){ out.push({x:x, city:g.city}); }); }); return out; }
+  function renderLive(){
+    var c = costs(), falta = c.total * 2;
+    var ideas = ideaAll().filter(function(o){ return ideaSel[o.x.id]; });
+    var ideasSum = ideas.reduce(function(a, o){ return a + (o.x.est || 0); }, 0);
+    var grand = falta + ideasSum;
+    var fab = document.getElementById("lv-fab"), panel = document.getElementById("lv-panel");
+    fab.hidden = false;
+    document.getElementById("lv-fab-n").textContent = fmt(grand);
+    if (lvPrev !== null && Math.round(grand) !== Math.round(lvPrev)) {
+      var d = grand - lvPrev, el = document.getElementById("lv-delta");
+      el.textContent = (d > 0 ? "+" : "−") + fmt(Math.abs(d)).replace("−", "");
+      el.classList.add("show"); clearTimeout(lvTimer); lvTimer = setTimeout(function(){ el.classList.remove("show"); }, 1600);
+    }
+    lvPrev = grand;
+    var optOn = OPTS.filter(isOn), optSum = optOn.reduce(function(a, it){ return a + amount(it) * 2; }, 0);
+    function row(a, b, cls){ return '<div class="lv-row' + (cls ? ' ' + cls : '') + '"><span>' + a + '</span><span>' + b + '</span></div>'; }
+    var h = '<div class="lv-head"><b>Presupuesto en vivo</b><button class="lv-x" type="button" data-lv="close" aria-label="Cerrar">✕</button></div>'
+      + '<div class="lv-big"><span>Falta pagar, los dos</span><strong>' + fmt(grand) + '</strong><small>' + fmt(grand / 2) + ' cada uno' + (ideasSum ? ' · incluye ideas estimadas' : '') + '</small></div>'
+      + '<div class="lv-rows">'
+      + row("Base del plan", fmt(falta - optSum * 1.1))
+      + row("Opcionales marcados (" + optOn.length + " de " + OPTS.length + ")", "+" + fmt(optSum * 1.1))
+      + (ideasSum || ideas.length ? row("Ideas marcadas (" + ideas.length + "), estimado", "+" + fmt(ideasSum)) : '')
+      + row("Ya pagado", fmt(PAID_TOTAL))
+      + row("Viaje completo", fmt(PAID_TOTAL + grand), "t")
+      + '</div>'
+      + '<div class="lv-h">Ajustes</div><ul class="lv-list">'
+      + '<li><label><input type="checkbox" data-lvx="x-night"' + (xNight ? ' checked' : '') + '><span>Noche extra en el Hampton (21 nov)</span><em>' + fmt(NIGHT) + '</em></label></li>'
+      + '<li><label><input type="checkbox" data-lvx="x-bag"' + (xBag ? ' checked' : '') + '><span>Maleta despachada para Dome</span><em>' + fmt(BAG) + '</em></label></li></ul>'
+      + '<div class="lv-h">Opcionales</div><ul class="lv-list">'
+      + OPTS.map(function(it){
+          var d = DAYS.filter(function(x){ return x.items.indexOf(it) >= 0; })[0], on = isOn(it);
+          return '<li><label><input type="checkbox" data-lvo="' + it.id + '"' + (on ? ' checked' : '') + '><span class="' + (on ? '' : 'off') + '">' + it.t + '<small>' + (d ? d.date : '') + ' · ' + it.h + '</small></span><em>' + fmt(amount(it) * 2) + '</em></label></li>';
+        }).join("") + '</ul>'
+      + '<div class="lv-h">Ideas marcadas</div>'
+      + (ideas.length ? '<ul class="lv-list">' + ideas.map(function(o){
+          return '<li><label><input type="checkbox" data-lvi="' + o.x.id + '" checked><span>' + o.x.n + '<small>' + o.city + ' · ' + o.x.cost + '</small></span><em>' + (o.x.est ? fmt(o.x.est) : 'gratis') + '</em></label></li>';
+        }).join("") + '</ul>' : '<p class="lv-note">Marcá "me interesa" en Explorar y se suman acá.</p>')
+      + '<p class="lv-note">Montos para los dos. Los totales suman 10% de imprevistos sobre opcionales y ajustes. Las ideas son estimadas e incluyen Uber; algunas reemplazan comidas que ya están en el plan, así que suman de más.</p>';
+    var keep = panel.scrollTop; panel.innerHTML = h; panel.scrollTop = keep;
+  }
+  function lvOpen(v){
+    var panel = document.getElementById("lv-panel"), fab = document.getElementById("lv-fab");
+    panel.hidden = !v; fab.hidden = v; fab.setAttribute("aria-expanded", v ? "true" : "false");
+    try { sessionStorage.setItem("vla26live", v ? "1" : ""); } catch(e){}
+  }
+  function lvTbh(){ var t = document.getElementById("tripbar"); document.documentElement.style.setProperty("--tbh", (t && t.innerHTML ? t.offsetHeight : 0) + "px"); }
+  document.getElementById("lv-fab").addEventListener("click", function(){ lvOpen(true); });
+  document.getElementById("lv-panel").addEventListener("click", function(e){ if (e.target.closest("[data-lv=close]")) lvOpen(false); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") lvOpen(false); });
+  document.getElementById("lv-panel").addEventListener("change", function(e){
+    var t = e.target, y = window.scrollY;
+    if (t.getAttribute("data-lvo")) { sel[t.getAttribute("data-lvo")] = t.checked; save(); render(); }
+    else if (t.getAttribute("data-lvx")) { var m = document.getElementById(t.getAttribute("data-lvx")); m.checked = t.checked; m.dispatchEvent(new Event("change")); }
+    else if (t.getAttribute("data-lvi")) { ideaSel[t.getAttribute("data-lvi")] = t.checked; try { localStorage.setItem("vla26ideas", JSON.stringify(ideaSel)); } catch(err){} renderIdeas(); renderMaps(); renderLive(); }
+    window.scrollTo(0, y);
+  });
+  window.addEventListener("resize", lvTbh);
+  function render(){ renderTotals(); renderMaps(); renderStays(); renderMoves(); renderDays(); renderTodo(); syncAll(); renderLive(); }
   document.getElementById("x-night").checked = xNight;
   document.getElementById("x-bag").checked = xBag;
   [["x-night", function(v){ xNight = v; }], ["x-bag", function(v){ xBag = v; }], ["x-opt", function(v){ OPTS.forEach(function(it){ sel[it.id] = v; }); }]].forEach(function(p){
@@ -1340,11 +1431,12 @@ function U(p){ return __IMG[p] || p; }
   document.getElementById("ideas-list").addEventListener("change", function(e){
     var id = e.target.getAttribute("data-idea"); if (!id) return;
     ideaSel[id] = e.target.checked; try { localStorage.setItem("vla26ideas", JSON.stringify(ideaSel)); } catch(err){}
-    renderMaps();
+    renderMaps(); renderLive();
   });
   renderIdeas();
   renderAlerts(); renderFood(); renderPlaces(); renderCredits(); renderShare(); tick(); setInterval(tick, 30000);
   render();
+  try { if (sessionStorage.getItem("vla26live")) lvOpen(true); } catch(e){}
 })();
 </script>
 
