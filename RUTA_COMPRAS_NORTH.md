@@ -3,7 +3,7 @@ Actualizada el 19 de noviembre de 2026. Para Pablo y Dome.
 
 ## Perfil
 - Pablo: zapatillas Hoka/On, Skechers, Nike/Jordan, adidas; Levi's y Abercrombie; regalos originales económicos y mascotas.
-- Dome: Skechers, Converse/Vans, Crocs, Nike/Jordan; Gap/Banana Republic, Guess, Levi's, American Eagle; decoración pequeña.
+- Dome: Skechers, Converse/Vans, Crocs, Nike/Jordan; Gap/Banana Republic, Guess, Levi's, American Eagle; decoración pequeña; **trajes de baño para mujer (una pieza o bikini, estilo por definir)**.
 - Ambos: zapatillas **solo si cuestan menos de USD 50 antes de impuestos**; jeans, camisetas, camisas/blusas, vestidos, chaquetas, sudaderas.
 - Tiempo 3 a 4 horas. Equilibrio entre calidad y precio. Presupuesto global superior a USD 1.000, pero **no significa que haya que gastarlo**.
 - Tallas informadas: calzado 8½ y 8–8½; pantalones 32 y 30×30. **Confirmar a qué persona y a qué sistema US corresponden** antes de pedir tallas.
@@ -44,6 +44,15 @@ Actualizada el 19 de noviembre de 2026. Para Pablo y Dome.
 3. **Crocs:** la oferta 2 pares de clearance por $50 venció **18 nov**, no presentarla como vigente el 19. [Fuente](https://www.premiumoutlets.com/outlet/las-vegas-north/deals).
 4. Para Nike, Hoka, On, adidas, GUESS, Gap, American Eagle y Abercrombie **no hay una promoción individual verificada para 19 nov en esta investigación**. Revisar etiquetas y confirmar caja. No prometer rebajas.
 
+## Paradas para trajes de baño de Dome (añadir 20–30 min, o sustituir tiendas de zapatillas sin rebajas)
+- **PacSun**, Water Court, local **1405**: el directorio oficial clasifica su oferta como swimwear; revisar bikinis y bañadores de una pieza. Inventario/tallas no confirmados.
+- **American Eagle**, Moon Court, local **1201**: su ficha oficial incluye swimwear; comprobar selección de temporada. Ya figura en la ruta, añadir 5–10 minutos para revisar.
+- **Hurley**, local **1880**: marca de surf, posible alternativa de ropa de playa; confirmar prendas femeninas y disponibilidad de trajes de baño antes de desviarse.
+- **Vilebrequin**, Water Court, local **1260**: marca especializada en bañadores de lujo, probablemente menos adecuada si buscan precios bajos. No hay descuento verificado en modelos femeninos concretos.
+- **PINK** local **1247** y **SKIMS** local **1141A**: posibles alternativas, pero sin stock de trajes de baño confirmado.
+- Pregunta pendiente: ¿Dome prefiere bikini, enterizo o ambos, y cuál es su presupuesto máximo por traje? Sin ello no priorizar marcas ni tallas.
+- Fuentes: https://www.premiumoutlets.com/outlet/las-vegas-north/stores/pacsun ; https://www.premiumoutlets.com/outlet/las-vegas-north/stores/american-eagle ; https://www.premiumoutlets.com/outlet/las-vegas-north/stores/vilebrequin
+
 ## Lista de compras priorizada
 ### Pablo
 - [ ] Jeans Levi's, talla por confirmar entre 32 y 30×30; meta: $30–50 por par.
@@ -52,6 +61,7 @@ Actualizada el 19 de noviembre de 2026. Para Pablo y Dome.
 - [ ] Zapatillas Nike, Skechers, adidas, Hoka u On: **comprar solo < $50** y cómodas.
 - [ ] Regalos originales <$20, preferir productos pequeños.
 ### Dome
+- [ ] Traje(s) de baño: probar en PacSun y American Eagle; presupuesto, estilo y talla pendientes de confirmar.
 - [ ] Jeans Levi's / American Eagle / Gap, talla por confirmar.
 - [ ] Blusas, vestidos, camisetas, sudaderas en GUESS / Gap / American Eagle.
 - [ ] Chaqueta ligera o abrigo si la relación precio/calidad convence.
