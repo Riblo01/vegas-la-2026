@@ -3,7 +3,7 @@ Actualizada el 19 de noviembre de 2026. Para Pablo y Dome.
 
 ## Perfil
 - Pablo: zapatillas Hoka/On, Skechers, Nike/Jordan, adidas; Levi's y Abercrombie; regalos originales económicos y mascotas.
-- Dome: Skechers, Converse/Vans, Crocs, Nike/Jordan; Gap/Banana Republic, Guess, Levi's, American Eagle; decoración pequeña; **trajes de baño para mujer (una pieza o bikini, estilo por definir)**.
+- Dome: Skechers, Converse/Vans, Crocs, Nike/Jordan; Gap/Banana Republic, Guess, Levi's, American Eagle; decoración pequeña; **trajes de baño para mujer: bikini y enterizo; USD 30–50 por traje completo antes de impuestos**.
 - Ambos: zapatillas **solo si cuestan menos de USD 50 antes de impuestos**; jeans, camisetas, camisas/blusas, vestidos, chaquetas, sudaderas.
 - Tiempo 3 a 4 horas. Equilibrio entre calidad y precio. Presupuesto global superior a USD 1.000, pero **no significa que haya que gastarlo**.
 - Tallas informadas: calzado 8½ y 8–8½; pantalones 32 y 30×30. **Confirmar a qué persona y a qué sistema US corresponden** antes de pedir tallas.
@@ -21,7 +21,7 @@ Actualizada el 19 de noviembre de 2026. Para Pablo y Dome.
 | Bloque | Zona / tienda | Local | Min | Objetivo |
 |---|---|---:|---:|---|
 | 1 | Moon Court: On | 1168B | 10 | Solo revisar liquidación < $50 |
-| 1 | Moon Court: American Eagle | 1201 | 15 | Jeans, camisetas, blusas |
+| 1 | Moon Court: American Eagle | 1201 | 20 | Jeans, blusas y **trajes de baño Dome** |
 | 1 | Moon Court: Disney Store Outlet | 1085 | 10 | Regalos pequeños, comparar precios |
 | 2 | Star Court: Crocs | 1050 | 15 | Calzado Dome < $50 |
 | 2 | Star Court: Hoka | 1890 | 10 | Solo ofertas < $50 |
@@ -30,11 +30,12 @@ Actualizada el 19 de noviembre de 2026. Para Pablo y Dome.
 | 3 | Flower Court: Converse | 1831 | 10 | Calzado Dome < $50 |
 | 4 | Sun Court: Skechers | 1585 | 20 | Principal apuesta por calzado < $50 |
 | 4 | Sun Court: adidas | 1680 | 15 | Solo liquidación |
+| 5 | Water Court: PacSun | 1405 | 20 | **Bikini o enterizo Dome, conjunto completo ≤$50** |
 | 5 | Water Court: Levi's Outlet | 1423 | 25 | Jeans talla confirmada |
 | 5 | Earth Court: Abercrombie & Fitch | 1350 | 15 | Jeans, camisetas, chaquetas Pablo |
 | 6 | Tree Court: Gap Factory | 2287 | 20 | Prendas casuales Dome |
-| | Traslados, probadores, caja y agua | | 10 | Margen mínimo |
-| | **Total** | | **210** | **3 h 30 min** |
+| | Traslados, probadores, caja y agua | | 5 | Margen mínimo |
+| | **Total** | | **230** | **3 h 50 min** |
 
 **Ajuste:** Este orden agrupa tiendas por court, pero el orden de los courts debe ajustarse al mapa físico y punto real de entrada. Si se cansan o se acaba el tiempo, eliminar On, Hoka, adidas y Disney primero; conservar Skechers, Nike, Levi's, Abercrombie, Gap, GUESS.
 
@@ -50,7 +51,11 @@ Actualizada el 19 de noviembre de 2026. Para Pablo y Dome.
 - **Hurley**, local **1880**: marca de surf, posible alternativa de ropa de playa; confirmar prendas femeninas y disponibilidad de trajes de baño antes de desviarse.
 - **Vilebrequin**, Water Court, local **1260**: marca especializada en bañadores de lujo, probablemente menos adecuada si buscan precios bajos. No hay descuento verificado en modelos femeninos concretos.
 - **PINK** local **1247** y **SKIMS** local **1141A**: posibles alternativas, pero sin stock de trajes de baño confirmado.
-- Pregunta pendiente: ¿Dome prefiere bikini, enterizo o ambos, y cuál es su presupuesto máximo por traje? Sin ello no priorizar marcas ni tallas.
+- **Preferencia confirmada:** Dome busca **ambos**, bikini y enterizo, con presupuesto máximo **USD 30–50 por traje completo**. En bikini, sumar top + bottom; no confundir el precio de una pieza con el total.
+- **Prioridad:** PacSun (Water Court 1405, 15–20 min) y American Eagle (Moon Court 1201, ampliar visita a 20 min). Hurley (1880) solo si está de paso. Vilebrequin no prioritario por precio premium.
+- **Precios online de referencia, NO confirmados en la tienda física:** PacSun tiene enterizos seleccionados alrededor de USD 43.99–48.99, dentro del presupuesto antes de impuestos; varios tops de bikini están alrededor de USD 25.99–30.99 **sin parte inferior**, por lo que el conjunto puede superar USD 50. Revisar etiquetas, talla y stock físico. https://www.pacsun.com/7562218.html ; https://www.pacsun.com/0912261.html ; https://www.pacsun.com/9798745.html
+- **Oferta American Eagle:** jeans a USD 39.99, válida 12–19 nov 2026, excluye clearance, según ficha oficial; no es una promoción de trajes de baño. Beneficio Simon+ $15 menos al gastar $75+ sujeto a condiciones. https://www.premiumoutlets.com/outlet/las-vegas-north/stores/american-eagle
+- **Talla de traje de baño por confirmar**: preguntar talla de ropa US y preferencia de cobertura/soporte; no inferirla de talla de calzado o jeans.
 - Fuentes: https://www.premiumoutlets.com/outlet/las-vegas-north/stores/pacsun ; https://www.premiumoutlets.com/outlet/las-vegas-north/stores/american-eagle ; https://www.premiumoutlets.com/outlet/las-vegas-north/stores/vilebrequin
 
 ## Lista de compras priorizada
@@ -61,7 +66,7 @@ Actualizada el 19 de noviembre de 2026. Para Pablo y Dome.
 - [ ] Zapatillas Nike, Skechers, adidas, Hoka u On: **comprar solo < $50** y cómodas.
 - [ ] Regalos originales <$20, preferir productos pequeños.
 ### Dome
-- [ ] Traje(s) de baño: probar en PacSun y American Eagle; presupuesto, estilo y talla pendientes de confirmar.
+- [ ] **Bikini completo (top + bottom) o enterizo**, presupuesto **USD 30–50 por conjunto**, en PacSun y American Eagle; talla pendiente de confirmar.
 - [ ] Jeans Levi's / American Eagle / Gap, talla por confirmar.
 - [ ] Blusas, vestidos, camisetas, sudaderas en GUESS / Gap / American Eagle.
 - [ ] Chaqueta ligera o abrigo si la relación precio/calidad convence.
